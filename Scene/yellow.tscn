@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dyven2vvp4i4v"]
+
+[ext_resource type="Texture2D" uid="uid://bt8m51s24guq2" path="res://Picture/yellow.png" id="1_2ja30"]
+[ext_resource type="Script" uid="uid://b6qf4dmkj1ous" path="res://Mechanic Script/DraggableColor.gd" id="1_t6bks"]
+
+[node name="YELLOW" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_t6bks")
+color_name = "yellow"
+color_value = Color(1, 1, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_2ja30")

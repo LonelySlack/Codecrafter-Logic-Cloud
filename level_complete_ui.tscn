@@ -1,0 +1,68 @@
+[gd_scene load_steps=9 format=3 uid="uid://whuid5mqoh51"]
+
+[ext_resource type="Script" uid="uid://b6buvchiifwgf" path="res://level_complete_ui.gd" id="1_cbdcg"]
+[ext_resource type="Texture2D" uid="uid://bamju5p8ane78" path="res://Picture/Gray_Buttons_Pixel.png" id="2_cbdcg"]
+[ext_resource type="Texture2D" uid="uid://cf8kofadqtlbh" path="res://Picture/Blue_Buttons_Pixel.png" id="3_1jkle"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_cbdcg"]
+font_size = 50
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rks2y"]
+atlas = ExtResource("2_cbdcg")
+region = Rect2(0, 80.04806, 48.769672, 16.361565)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wwxau"]
+atlas = ExtResource("3_1jkle")
+region = Rect2(160.01152, 79.71497, 48.60646, 17.242653)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jdcbr"]
+atlas = ExtResource("2_cbdcg")
+region = Rect2(32.12703, 47.922604, 32.86203, 16.3222)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nx8t5"]
+atlas = ExtResource("2_cbdcg")
+region = Rect2(191.9706, 48.056313, 32.488205, 16.041061)
+
+[node name="Control" type="ColorRect"]
+process_mode = 2
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+script = ExtResource("1_cbdcg")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "LEVEL COMPLETE"
+label_settings = SubResource("LabelSettings_cbdcg")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Continue Button" type="TextureButton" parent="CenterContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(200, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_rks2y")
+texture_pressed = SubResource("AtlasTexture_wwxau")
+stretch_mode = 0
+
+[node name="Menu button" type="TextureButton" parent="CenterContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_jdcbr")
+texture_pressed = SubResource("AtlasTexture_nx8t5")
+stretch_mode = 0

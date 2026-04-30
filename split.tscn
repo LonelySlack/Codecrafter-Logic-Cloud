@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://g0cfv75ayl2n"]
+
+[ext_resource type="Script" uid="uid://duya4picmyuoc" path="res://split.gd" id="1_8eu58"]
+[ext_resource type="Texture2D" uid="uid://brbvxtut5lh5s" path="res://Picture/SPLIT.png" id="1_h8kyh"]
+
+[node name="GraphNode" type="GraphNode"]
+offset_right = 9.0
+offset_bottom = 55.0
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+script = ExtResource("1_8eu58")
+
+[node name="InputRow1" type="Label" parent="."]
+layout_mode = 2
+text = "Input 1"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(150, 100)
+layout_mode = 2
+texture = ExtResource("1_h8kyh")

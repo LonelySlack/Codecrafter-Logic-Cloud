@@ -1,0 +1,323 @@
+[gd_scene load_steps=35 format=3 uid="uid://cfp12n3pveupu"]
+
+[ext_resource type="Script" uid="uid://cn2t2qfagr4da" path="res://Code/level_select_menu.gd" id="1_fln01"]
+[ext_resource type="VideoStream" uid="uid://ynltyhn85p4x" path="res://untitled-video-2-tnorcr.ogv" id="2_fln01"]
+[ext_resource type="Texture2D" uid="uid://baiktasybuwet" path="res://Picture/Levels.png" id="3_ah5ec"]
+[ext_resource type="Texture2D" uid="uid://cnskb3t7foxkx" path="res://Picture/Brown_Buttons_Pixel.png" id="4_pu6ag"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mflmt"]
+font_size = 150
+
+[sub_resource type="LabelSettings" id="LabelSettings_pu6ag"]
+font_size = 50
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ug50d"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(21.930052, 66.956436, 19.145723, 19.603394)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ah5ec"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.99549, 68.148, 19.08828, 19.227043)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i1eus"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(21.995018, 89.03758, 19.198364, 19.828758)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pu6ag"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.985558, 89.83949, 19.832218, 19.832222)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_imssh"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(1.0331612, 88.9203, 19.039692, 20.129028)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ch3o7"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(22.027647, 111.03971, 19.702787, 19.939598)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqdi3"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.913292, 111.91425, 19.179825, 19.140678)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r1vit"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(0.987854, 110.99627, 19.062405, 20.001823)
+
+[sub_resource type="LabelSettings" id="LabelSettings_imssh"]
+font_size = 50
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sk3et"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(21.930052, 66.956436, 19.145723, 19.603394)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nwx4s"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.99549, 68.148, 19.08828, 19.227043)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2whek"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(21.995018, 89.03758, 19.198364, 19.828758)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hx2dv"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.985558, 89.83949, 19.832218, 19.832222)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_evkaa"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(1.0331612, 88.9203, 19.039692, 20.129028)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nkuaj"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(22.027647, 111.03971, 19.702787, 19.939598)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gf7g"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.913292, 111.91425, 19.179825, 19.140678)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lqwfc"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(0.987854, 110.99627, 19.062405, 20.001823)
+
+[sub_resource type="LabelSettings" id="LabelSettings_rqdi3"]
+font_size = 50
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_asw3x"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(21.930052, 66.956436, 19.145723, 19.603394)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nq51k"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.99549, 68.148, 19.08828, 19.227043)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p2054"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(21.995018, 89.03758, 19.198364, 19.828758)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xyp00"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.985558, 89.83949, 19.832218, 19.832222)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2sbx2"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(1.0331612, 88.9203, 19.039692, 20.129028)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hfcxn"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(22.027647, 111.03971, 19.702787, 19.939598)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gp5fw"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(42.913292, 111.91425, 19.179825, 19.140678)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_siy4g"]
+atlas = ExtResource("3_ah5ec")
+region = Rect2(0.987854, 110.99627, 19.062405, 20.001823)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_637ho"]
+atlas = ExtResource("4_pu6ag")
+region = Rect2(95.943245, 48.00667, 32.138863, 16.025417)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aheey"]
+atlas = ExtResource("4_pu6ag")
+region = Rect2(255.94911, 48.059982, 32.070724, 16.074272)
+
+[node name="LevelSelectMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fln01")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_fln01")
+autoplay = true
+loop = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -422.5
+offset_right = 422.5
+offset_bottom = 205.0
+grow_horizontal = 2
+text = "Select Level"
+label_settings = SubResource("LabelSettings_mflmt")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -471.5
+offset_top = -160.0
+offset_right = 471.5
+offset_bottom = 240.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="VBoxContainer4" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="HBoxContainer/VBoxContainer4"]
+layout_mode = 2
+text = "DATA TYPE"
+label_settings = SubResource("LabelSettings_pu6ag")
+horizontal_alignment = 1
+
+[node name="dataBtn1" type="TextureButton" parent="HBoxContainer/VBoxContainer4"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_ug50d")
+texture_pressed = SubResource("AtlasTexture_ah5ec")
+stretch_mode = 0
+
+[node name="dataBtn2" type="TextureButton" parent="HBoxContainer/VBoxContainer4"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_i1eus")
+texture_pressed = SubResource("AtlasTexture_pu6ag")
+texture_disabled = SubResource("AtlasTexture_imssh")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="dataBtn3" type="TextureButton" parent="HBoxContainer/VBoxContainer4"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_ch3o7")
+texture_pressed = SubResource("AtlasTexture_rqdi3")
+texture_disabled = SubResource("AtlasTexture_r1vit")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+text = "EXPRESSION"
+label_settings = SubResource("LabelSettings_imssh")
+horizontal_alignment = 1
+
+[node name="expreBtn1" type="TextureButton" parent="HBoxContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_sk3et")
+texture_pressed = SubResource("AtlasTexture_nwx4s")
+stretch_mode = 0
+
+[node name="expreBtn2" type="TextureButton" parent="HBoxContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_2whek")
+texture_pressed = SubResource("AtlasTexture_hx2dv")
+texture_disabled = SubResource("AtlasTexture_evkaa")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="expreBtn3" type="TextureButton" parent="HBoxContainer/VBoxContainer"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_nkuaj")
+texture_pressed = SubResource("AtlasTexture_5gf7g")
+texture_disabled = SubResource("AtlasTexture_lqwfc")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HBoxContainer/VBoxContainer2"]
+layout_mode = 2
+text = "FUNCTIONS"
+label_settings = SubResource("LabelSettings_rqdi3")
+horizontal_alignment = 1
+
+[node name="functionBtn1" type="TextureButton" parent="HBoxContainer/VBoxContainer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_asw3x")
+texture_pressed = SubResource("AtlasTexture_nq51k")
+stretch_mode = 0
+
+[node name="functionBtn2" type="TextureButton" parent="HBoxContainer/VBoxContainer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_p2054")
+texture_pressed = SubResource("AtlasTexture_xyp00")
+texture_disabled = SubResource("AtlasTexture_2sbx2")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="functionBtn3" type="TextureButton" parent="HBoxContainer/VBoxContainer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture_normal = SubResource("AtlasTexture_hfcxn")
+texture_pressed = SubResource("AtlasTexture_gp5fw")
+texture_disabled = SubResource("AtlasTexture_siy4g")
+ignore_texture_size = true
+stretch_mode = 0
+
+[node name="Play button" type="TextureButton" parent="."]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -149.0
+offset_bottom = 100.0
+grow_horizontal = 0
+texture_normal = SubResource("AtlasTexture_637ho")
+texture_pressed = SubResource("AtlasTexture_aheey")
+stretch_mode = 0
+
+[connection signal="pressed" from="HBoxContainer/VBoxContainer4/dataBtn1" to="." method="_on_data_btn_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer4/dataBtn2" to="." method="_on_data_btn_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer4/dataBtn3" to="." method="_on_data_btn_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/expreBtn1" to="." method="_on_expre_btn_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/expreBtn2" to="." method="_on_expre_btn_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer/expreBtn3" to="." method="_on_expre_btn_3_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/functionBtn1" to="." method="_on_function_btn_1_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/functionBtn2" to="." method="_on_function_btn_2_pressed"]
+[connection signal="pressed" from="HBoxContainer/VBoxContainer2/functionBtn3" to="." method="_on_function_btn_3_pressed"]
+[connection signal="pressed" from="Play button" to="." method="_on_play_button_pressed"]

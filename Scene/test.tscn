@@ -1,0 +1,45 @@
+[gd_scene load_steps=7 format=3 uid="uid://bxr0luh3bbbg6"]
+
+[ext_resource type="PackedScene" uid="uid://dvxrc7nqbm4c" path="res://Scene/RED.tscn" id="1_vrsyt"]
+[ext_resource type="PackedScene" uid="uid://i4xpqqe3vpgg" path="res://Scene/BLUE.tscn" id="2_asc4v"]
+[ext_resource type="PackedScene" uid="uid://dyven2vvp4i4v" path="res://Scene/yellow.tscn" id="3_1i1hv"]
+
+[sub_resource type="Theme" id="Theme_ppyta"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ykrsh"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="GDScript" id="GDScript_j4ict"]
+
+[node name="Node2D" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(1900, 500)
+layout_mode = 0
+offset_right = 1900.0
+offset_bottom = 1000.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(250, 1000)
+layout_mode = 2
+theme = SubResource("Theme_ppyta")
+
+[node name="RED" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_vrsyt")]
+position = Vector2(47, 559)
+
+[node name="Blue" parent="HBoxContainer/VBoxContainer" instance=ExtResource("2_asc4v")]
+position = Vector2(24, 272)
+
+[node name="YELLOW" parent="HBoxContainer/VBoxContainer" instance=ExtResource("3_1i1hv")]
+position = Vector2(60, 832)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_left = 422.0
+offset_top = 262.0
+offset_right = 1843.0
+offset_bottom = 1043.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ykrsh")
+script = SubResource("GDScript_j4ict")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://de17sd4cxsfms"]
+
+[ext_resource type="Script" uid="uid://b6qf4dmkj1ous" path="res://Mechanic Script/DraggableColor.gd" id="1_tkdp1"]
+[ext_resource type="Texture2D" uid="uid://dqupg7tn1yh4o" path="res://Picture/White.png" id="2_glyv3"]
+
+[node name="White" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_tkdp1")
+color_name = "white"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_glyv3")

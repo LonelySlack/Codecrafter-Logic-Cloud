@@ -1,0 +1,211 @@
+[gd_scene load_steps=20 format=3 uid="uid://bhvutx8oj5rrf"]
+
+[ext_resource type="VideoStream" uid="uid://ynltyhn85p4x" path="res://untitled-video-2-tnorcr.ogv" id="1_1pe0h"]
+[ext_resource type="Script" uid="uid://cem7vq3qyis4e" path="res://lvl1_function.gd" id="1_27bay"]
+[ext_resource type="Script" uid="uid://bk7hl3mgteb07" path="res://Mechanic Script/CombineButton.gd" id="2_27bay"]
+[ext_resource type="Texture2D" uid="uid://chdnnrtd5bq7g" path="res://Picture/Combine.png" id="3_sof0w"]
+[ext_resource type="Texture2D" uid="uid://cf8kofadqtlbh" path="res://Picture/Blue_Buttons_Pixel.png" id="4_ggavl"]
+[ext_resource type="Script" uid="uid://ckwro76hdgk4u" path="res://RestartButton.gd" id="5_ubhxj"]
+[ext_resource type="Script" uid="uid://b6x1p8s8hc0ck" path="res://HomeButton.gd" id="6_65or1"]
+[ext_resource type="PackedScene" uid="uid://dvxrc7nqbm4c" path="res://Scene/RED.tscn" id="7_lhbbi"]
+[ext_resource type="PackedScene" uid="uid://i4xpqqe3vpgg" path="res://Scene/BLUE.tscn" id="8_gjkv5"]
+[ext_resource type="Script" uid="uid://8urarqnwldsk" path="res://Mechanic Script/graph_edit.gd" id="10_3qmij"]
+[ext_resource type="PackedScene" uid="uid://gsueaovr7oqp" path="res://Scene/CombineNode.tscn" id="11_kb5eu"]
+[ext_resource type="VideoStream" uid="uid://wsgondudaewg" path="res://Video/Function.ogv" id="12_bogds"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nmsli"]
+atlas = ExtResource("4_ggavl")
+region = Rect2(15.926745, 0.057035685, 16.232426, 16.060202)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_betor"]
+atlas = ExtResource("4_ggavl")
+region = Rect2(175.95709, -0.03298235, 16.009323, 15.925476)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vjtdm"]
+atlas = ExtResource("4_ggavl")
+region = Rect2(143.99864, 31.711721, 16.563065, 16.283312)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bgw3c"]
+atlas = ExtResource("4_ggavl")
+region = Rect2(304.1148, 32.048595, 16.725037, 15.977253)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lrvbd"]
+atlas = ExtResource("4_ggavl")
+region = Rect2(47.90464, 0.0014734268, 16.306892, 15.785901)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oqlok"]
+atlas = ExtResource("4_ggavl")
+region = Rect2(207.90002, 0.04219699, 16.150604, 15.866425)
+
+[sub_resource type="Theme" id="Theme_7nvrk"]
+
+[node name="Level1" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_27bay")
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -960.0
+offset_top = -540.0
+offset_right = 960.0
+offset_bottom = 540.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("1_1pe0h")
+autoplay = true
+loop = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 15
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PanelContainer"]
+custom_minimum_size = Vector2(0, 100)
+layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/PanelContainer/HBoxContainer"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+script = ExtResource("2_27bay")
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/VBoxContainer/PanelContainer/HBoxContainer/Button"]
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 0
+offset_right = 89.0
+offset_bottom = 93.0
+texture = ExtResource("3_sof0w")
+expand_mode = 1
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer/PanelContainer"]
+layout_mode = 2
+mouse_filter = 2
+alignment = 2
+
+[node name="Play button" type="TextureButton" parent="MarginContainer/VBoxContainer/PanelContainer/HBoxContainer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_nmsli")
+texture_pressed = SubResource("AtlasTexture_betor")
+stretch_mode = 0
+
+[node name="Reset button" type="TextureButton" parent="MarginContainer/VBoxContainer/PanelContainer/HBoxContainer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_vjtdm")
+texture_pressed = SubResource("AtlasTexture_bgw3c")
+stretch_mode = 0
+script = ExtResource("5_ubhxj")
+
+[node name="Home button" type="TextureButton" parent="MarginContainer/VBoxContainer/PanelContainer/HBoxContainer2"]
+texture_filter = 1
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 2
+texture_normal = SubResource("AtlasTexture_lrvbd")
+texture_pressed = SubResource("AtlasTexture_oqlok")
+stretch_mode = 0
+script = ExtResource("6_65or1")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 600)
+layout_mode = 2
+
+[node name="PanelContainer" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/ScrollContainer"]
+layout_mode = 2
+theme = SubResource("Theme_7nvrk")
+
+[node name="RED" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/ScrollContainer/VBoxContainer" instance=ExtResource("7_lhbbi")]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="Blue" parent="MarginContainer/VBoxContainer/HBoxContainer/PanelContainer/ScrollContainer/VBoxContainer" instance=ExtResource("8_gjkv5")]
+custom_minimum_size = Vector2(200, 200)
+layout_mode = 2
+
+[node name="GraphEdit" type="GraphEdit" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+script = ExtResource("10_3qmij")
+unlock_level_number = 1
+combine_node_scene = ExtResource("11_kb5eu")
+
+[node name="Objective Panel" type="PanelContainer" parent="MarginContainer/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(300, 0)
+layout_mode = 2
+
+[node name="ScrollContainer" type="ScrollContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/Objective Panel"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/Objective Panel/ScrollContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/Objective Panel/ScrollContainer/VBoxContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+bbcode_enabled = true
+text = "[b]Mission:[/b] Execute [code]combine()[/code] using [code][color=red]\"red\"[/color][/code] and [code][color=cornflowerblue]\"blue\"[/color][/code] to create [code][color=purple]\"purple\"[/color][/code].
+
+[b]Code Protocol:[/b]
+[code]
+[color=#4ec9b0]String[/color] [color=#dcdcaa]createPurple[/color]() {
+
+    [color=#6a9955]// 1. The Process (Mixing)[/color]
+    [color=#6a9955]// Combine red and blue directly[/color]
+    [color=#c586c0]return[/color] [color=#dcdcaa]combine[/color]([color=#ff4444]\"red\"[/color], [color=#6495ed]\"blue\"[/color]);
+}
+[/code]
+
+[color=gray][i]Need help? Watch the video below or check the [b]How to Play[/b] tutorial in the Main Menu.[/i][/color]"
+fit_content = true
+scroll_active = false
+
+[node name="VideoStreamPlayer2" type="VideoStreamPlayer" parent="MarginContainer/VBoxContainer/HBoxContainer/Objective Panel/ScrollContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
+size_flags_vertical = 6
+mouse_filter = 2
+stream = ExtResource("12_bogds")
+autoplay = true
+expand = true
+loop = true
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/PanelContainer/HBoxContainer2/Play button" to="MarginContainer/VBoxContainer/HBoxContainer/GraphEdit" method="_on_run_pressed"]

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dqpoigk0hc8pf"]
+
+[ext_resource type="Texture2D" uid="uid://c7erpjkbicbi5" path="res://Picture/blue.png" id="1_fdeb5"]
+
+[node name="DraggableBlue" type="TextureRect"]
+offset_right = 40.0
+offset_bottom = 40.0
+mouse_filter = 2
+texture = ExtResource("1_fdeb5")

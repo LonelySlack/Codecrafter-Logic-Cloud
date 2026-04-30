@@ -1,0 +1,32 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtwwmb13s7bsc"]
+
+[ext_resource type="Texture2D" uid="uid://7v5y6jdwej7w" path="res://Picture/item.png" id="1_bp1wp"]
+[ext_resource type="Script" uid="uid://04kl1nee2liq" path="res://draggableItem.gd" id="2_ph0dh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_6m5p0"]
+font_size = 50
+
+[node name="Area2D" type="TextureRect"]
+offset_right = 200.0
+offset_bottom = 200.0
+texture = ExtResource("1_bp1wp")
+expand_mode = 1
+script = ExtResource("2_ph0dh")
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.5
+offset_top = -34.5
+offset_right = 54.5
+offset_bottom = 34.5
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+text = "10"
+label_settings = SubResource("LabelSettings_6m5p0")
+horizontal_alignment = 1

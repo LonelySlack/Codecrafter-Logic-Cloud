@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://c1qy6mdgg1a43"]
+
+[ext_resource type="Script" uid="uid://dj70ewawhdba6" path="res://ColorBlock.gd" id="1_ov2fd"]
+[ext_resource type="Texture2D" uid="uid://c7erpjkbicbi5" path="res://Picture/blue.png" id="2_ihbug"]
+[ext_resource type="Script" uid="uid://b2b7qdgud8evq" path="res://ConnectionPort.gd" id="3_4uo88"]
+
+[node name="ColorBlock" type="Area2D"]
+script = ExtResource("1_ov2fd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(96, 98)
+texture = ExtResource("2_ihbug")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="InputPort" type="Area2D" parent="."]
+script = ExtResource("3_4uo88")
+
+[node name="Sprite2D" type="Sprite2D" parent="InputPort"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InputPort"]

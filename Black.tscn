@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://chaetxto8wn8s"]
+
+[ext_resource type="Texture2D" uid="uid://cfy48sys7q6bt" path="res://Picture/Black.png" id="1_bdfdl"]
+[ext_resource type="Script" uid="uid://b6qf4dmkj1ous" path="res://Mechanic Script/DraggableColor.gd" id="1_t4pv0"]
+
+[node name="Black" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_t4pv0")
+color_name = "black"
+color_value = Color(0, 0, 0, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_bdfdl")

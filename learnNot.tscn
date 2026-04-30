@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dl8pul4txx6bc"]
+
+[ext_resource type="Script" uid="uid://crjwc8s1x47ji" path="res://NotNode.gd" id="1_7wktr"]
+[ext_resource type="Texture2D" uid="uid://5peyxwb2jbr2" path="res://Picture/not.png" id="2_7wktr"]
+
+[node name="GraphNode" type="GraphNode"]
+offset_right = 9.0
+offset_bottom = 55.0
+slot/0/left_enabled = false
+slot/0/left_type = 0
+slot/0/left_color = Color(1, 1, 1, 1)
+slot/0/left_icon = null
+slot/0/right_enabled = false
+slot/0/right_type = 0
+slot/0/right_color = Color(1, 1, 1, 1)
+slot/0/right_icon = null
+slot/0/draw_stylebox = true
+slot/1/left_enabled = false
+slot/1/left_type = 0
+slot/1/left_color = Color(1, 1, 1, 1)
+slot/1/left_icon = null
+slot/1/right_enabled = false
+slot/1/right_type = 0
+slot/1/right_color = Color(1, 1, 1, 1)
+slot/1/right_icon = null
+slot/1/draw_stylebox = true
+script = ExtResource("1_7wktr")
+
+[node name="inputRow" type="Label" parent="."]
+layout_mode = 2
+text = "Input 1"
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = ExtResource("2_7wktr")

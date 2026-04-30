@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://i4xpqqe3vpgg"]
+
+[ext_resource type="Texture2D" uid="uid://c7erpjkbicbi5" path="res://Picture/blue.png" id="1_0d17d"]
+[ext_resource type="Script" uid="uid://b6qf4dmkj1ous" path="res://Mechanic Script/DraggableColor.gd" id="1_0msw4"]
+
+[node name="Blue" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_0msw4")
+color_name = "blue"
+color_value = Color(0, 0, 1, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_0d17d")

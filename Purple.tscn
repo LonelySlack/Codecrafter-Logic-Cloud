@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://3jrmqooyqo1a"]
+
+[ext_resource type="Script" uid="uid://b6qf4dmkj1ous" path="res://Mechanic Script/DraggableColor.gd" id="1_ls017"]
+[ext_resource type="Texture2D" uid="uid://ckhx2uxk584gh" path="res://Picture/Purple.png" id="2_a11pl"]
+
+[node name="Purple" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_ls017")
+color_name = "purple"
+color_value = Color(0.5019608, 0, 0.5019608, 1)
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("2_a11pl")

@@ -1,0 +1,23 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Godot temp files
+*.tmp
+*.tmp.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Archives
+*.zip
+
+# Web export builds
+MyGame_Web/
+
+# Machine-specific project file
+project-MSI.godot
+
+# Export presets (may contain paths specific to machine)
+export_presets.cfg
